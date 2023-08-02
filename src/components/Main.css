@@ -1,0 +1,50 @@
+
+  
+  .main-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .tabs {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .tabs button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background-color: #f2f2f2;
+    cursor: pointer;
+  }
+  
+  .tabs button.active {
+    background-color: #ccc;
+  }
+  
+  .tab-content {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .steps {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .step {
+    flex: 1;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .step.active {
+    background-color: #f2f2f2;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  

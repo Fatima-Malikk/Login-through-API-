@@ -1,0 +1,80 @@
+.login-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('C:\Users\fatim\OneDrive\Desktop\interview_task\macquires\src\assets\lb.jpg');
+    background-size: cover;
+  }
+  
+  
+  .logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+    width: 40%;
+  }
+  .login-form {
+    background-color: #fff;
+    padding: 20px;
+    width: 35%;
+    border-radius: 5px;
+  
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  h2{
+    color: rgb(77, 75, 75);
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: 70%;
+  }
+  
+  label {
+    color: darkgray;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+  }
+  
+.password-input {
+  position: relative;
+}
+
+.eye-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.eye-icon.visible {
+  color: #007bff;
+}
+  
+  
+  button{
+    background-color: #007bff;
+    width: 70%;
+    padding: 5px;
+    color: #ccc;
+    border-color: #ccc;
+  }
+  

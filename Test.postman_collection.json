@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "21904aa2-342f-4168-99c5-08757115106f",
+		"name": "Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Customer and Reservation",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"document_type\": \"Manual\",\r\n    \"lang\": \"en\",\r\n    \"signatureLang\": \"en\",\r\n    \"Customer\": {\r\n        \"Oracle_Customer_Number\": \"\",\r\n        \"Oracle_Customer_Exists\": \"\",\r\n        \"status\": \"A\",\r\n        \"country_of_residence\": \"\",\r\n        \"city\": \"ABC\",\r\n        \"telephone_type\": \"\",\r\n        \"phone_country_code\": \"966\",\r\n        \"phone_area_code\": \"\",\r\n        \"phone_number\": \"594468058\",\r\n        \"alt_telephone_type\": \"\",\r\n        \"alt_phone_country_code\": \"\",\r\n        \"alt_phone_area_code\": \"\",\r\n        \"alt_phone_number\": \"\",\r\n        \"email_address\": \"hamad2k9@gmail.com\",\r\n        \"secondary_email_address\": \"\",\r\n        \"website\": \"\",\r\n        \"lead_id\": \"64\",\r\n        \"lead_source\": \"Broker\",\r\n        \"source_details\": \"\",\r\n        \"remarks\": \"\",\r\n        \"broker_id\": \"5176\",\r\n        \"title\": \"\",\r\n        \"first_name\": \"ALok\",\r\n        \"middle_name\": \"\",\r\n        \"last_name\": \"UAT\",\r\n        \"customer_name\": \"ALok UAT\",\r\n        \"arabic_customer_name\": \"\",\r\n        \"nationality\": \"SA\",\r\n        \"date_of_birth\": \"10/23/2022\",\r\n        \"hijri_date_of_birth\": \"\",\r\n        \"gender\": \"M\",\r\n        \"customer_id_type\": \"NATIONAL ID\",\r\n        \"id_number\": \"2413741915\",\r\n        \"id_issue_date\": \"\",\r\n        \"hijri_id_issue_date\": \"\",\r\n        \"id_expiry_date\": \"\",\r\n        \"hijri_id_expiry_date\": \"\",\r\n        \"place_of_issue\": \"\",\r\n        \"passport_number\": \"\",\r\n        \"passport_issue_date\": \"\",\r\n        \"passport_expiry_date\": \"\",\r\n        \"home_address1\": \"\",\r\n        \"home_address2\": \"\",\r\n        \"home_address3\": \"\",\r\n        \"home_city\": \"ABC\",\r\n        \"home_state\": \"ABC\",\r\n        \"home_country\": \"\",\r\n        \"home_po_box\": \"\",\r\n        \"home_postal_code\": \"\",\r\n        \"office_address1\": \"\",\r\n        \"office_address2\": \"\",\r\n        \"office_address3\": \"\",\r\n        \"office_city\": \"\",\r\n        \"office_state\": \"\",\r\n        \"office_country\": \"\",\r\n        \"office_po_box\": \"\",\r\n        \"office_postal_code\": \"\",\r\n        \"arabic_address_line1\": \"\",\r\n        \"arabic_address_line2\": \"\",\r\n        \"arabic_address_line3\": \"\",\r\n        \"arabic_city\": \"\",\r\n        \"arabic_state\": \"\",\r\n        \"arabic_country\": \"\",\r\n        \"arabic_po_box\": \"\",\r\n        \"arabic_postal_code\": \"\",\r\n        \"creation_date\": \"10/23/2022\",\r\n        \"created_by\": \"\",\r\n        \"last_update_date\": \"10/23/2022\",\r\n        \"last_updated_by\": \"\",\r\n        \"customer_type\": \"Individual\",\r\n        \"owner_pct\": \"100\",\r\n        \"primary_owner\": \"Y\"\r\n    },\r\n    \"Reservation\": {\r\n        \"Oracle_Reservation_Number\": \"\",\r\n        \"registration_id\": \"64\",\r\n        \"org_id\": \"928\",\r\n        \"version_no\": \"1\",\r\n        \"registration_date\": \"10/23/2022\",\r\n        \"status\": \"3\",\r\n        \"broker_id\": \"5176\",\r\n        \"payment_plan_id\": \"\",\r\n        \"sale_type\": \"\",\r\n        \"payment_mode\": \"\",\r\n        \"billing_owner\": \"\",\r\n        \"token_deposit_amount\": \"\",\r\n        \"down_payment_amount\": \"583457\",\r\n        \"payment_type_id\": \"1\",\r\n        \"total_unit_price\": \"583457\",\r\n        \"discount_pct\": \"\",\r\n        \"discount\": \"\",\r\n        \"net_price\": \"583457\",\r\n        \"gross_unit_price\": \"583457\",\r\n        \"property_id\": \"24\",\r\n        \"office_section_id\": \"4702\",\r\n        \"saleable_area_sqft\": \"\",\r\n        \"unit_rate_sqft\": \"\",\r\n        \"saleable_area_sqm\": \"222.1\",\r\n        \"unit_rate_sqm\": \"583457\",\r\n        \"bank_account_type_code\": \"\",\r\n        \"bank_name\": \"\",\r\n        \"bank_account_iban\": \"\",\r\n        \"bank_account\": \"\",\r\n        \"promotion_id\": \"\",\r\n        \"promotion_offer_dtls\": \"\",\r\n        \"comments\": \"\",\r\n        \"creation_date\": \"10/23/2022\",\r\n        \"created_by\": \"\",\r\n        \"last_update_date\": \"10/23/2022\",\r\n        \"last_updated_by\": \"\",\r\n        \"VAT_RETT_Amount\": \"583457\",\r\n        \"salesrep_id\": \"ARK001776\",//PC\r\n        \"salesrep_manager_id\": \"\", //Sales Manager\r\n        \"salesrep_director_id\": \"\", //Director\r\n        \"release_id\": \"20980\",\r\n        \"building_land_id\": \"19312\",\r\n        \"floor_parcel_id\": \"19353\",\r\n        \"confirm_flag\": \"\",\r\n        \"payment_method\": \"\",\r\n        \"charge_type\": \"\",\r\n        \"receipt_number\": \"64\",\r\n        \"cheque_date\": \"\",\r\n        \"currency_code\": \"\",\r\n        \"exchange_rate\": \"\",\r\n        \"exchange_rate_type\": \"\",\r\n        \"exchange_rate_date\": \"\",\r\n        \"receipt_amount\": \"208\",\r\n        \"location_id\": null,\r\n        \"sale_admin_id\":\"ARK001222\",\r\n        \"payment_term\":\"C\",\r\n        \"Mortgage_Employee_name\":\"ABC\",\r\n        \"Mortgage_Employee_contact\":\"05984984\",\r\n        \"DAAR_English_Lender_Name\":\"AD\",\r\n        \"DAAAR_Arabic_Lender\":\"\",\r\n        \"RETT_VAT_Exemption\":\"Y\",\r\n        \"RETT_VAT_Reimbursement_Certificate_Number\":\"213456\"\r\n\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://daarconn-dev.alarkan.com/oracle/createcustomerreservation",
+					"protocol": "https",
+					"host": [
+						"daarconn-dev",
+						"alarkan",
+						"com"
+					],
+					"path": [
+						"oracle",
+						"createcustomerreservation"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create Customer and Reservation",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"document_type\": \"Manual\",\r\n    \"lang\": \"en\",\r\n    \"signatureLang\": \"en\",\r\n    \"Customer\": {\r\n        \"Oracle_Customer_Number\": \"\",\r\n        \"Oracle_Customer_Exists\": \"\",\r\n        \"status\": \"A\",\r\n        \"country_of_residence\": \"\",\r\n        \"city\": \"ABC\",\r\n        \"telephone_type\": \"\",\r\n        \"phone_country_code\": \"966\",\r\n        \"phone_area_code\": \"\",\r\n        \"phone_number\": \"594468058\",\r\n        \"alt_telephone_type\": \"\",\r\n        \"alt_phone_country_code\": \"\",\r\n        \"alt_phone_area_code\": \"\",\r\n        \"alt_phone_number\": \"\",\r\n        \"email_address\": \"hamad2k9@gmail.com\",\r\n        \"secondary_email_address\": \"\",\r\n        \"website\": \"\",\r\n        \"lead_id\": \"64\",\r\n        \"lead_source\": \"Broker\",\r\n        \"source_details\": \"\",\r\n        \"remarks\": \"\",\r\n        \"broker_id\": \"5176\",\r\n        \"title\": \"\",\r\n        \"first_name\": \"ALok\",\r\n        \"middle_name\": \"\",\r\n        \"last_name\": \"UAT\",\r\n        \"customer_name\": \"ALok UAT\",\r\n        \"arabic_customer_name\": \"\",\r\n        \"nationality\": \"SA\",\r\n        \"date_of_birth\": \"10/23/2022\",\r\n        \"hijri_date_of_birth\": \"\",\r\n        \"gender\": \"M\",\r\n        \"customer_id_type\": \"NATIONAL ID\",\r\n        \"id_number\": \"2413741915\",\r\n        \"id_issue_date\": \"\",\r\n        \"hijri_id_issue_date\": \"\",\r\n        \"id_expiry_date\": \"\",\r\n        \"hijri_id_expiry_date\": \"\",\r\n        \"place_of_issue\": \"\",\r\n        \"passport_number\": \"\",\r\n        \"passport_issue_date\": \"\",\r\n        \"passport_expiry_date\": \"\",\r\n        \"home_address1\": \"\",\r\n        \"home_address2\": \"\",\r\n        \"home_address3\": \"\",\r\n        \"home_city\": \"ABC\",\r\n        \"home_state\": \"ABC\",\r\n        \"home_country\": \"\",\r\n        \"home_po_box\": \"\",\r\n        \"home_postal_code\": \"\",\r\n        \"office_address1\": \"\",\r\n        \"office_address2\": \"\",\r\n        \"office_address3\": \"\",\r\n        \"office_city\": \"\",\r\n        \"office_state\": \"\",\r\n        \"office_country\": \"\",\r\n        \"office_po_box\": \"\",\r\n        \"office_postal_code\": \"\",\r\n        \"arabic_address_line1\": \"\",\r\n        \"arabic_address_line2\": \"\",\r\n        \"arabic_address_line3\": \"\",\r\n        \"arabic_city\": \"\",\r\n        \"arabic_state\": \"\",\r\n        \"arabic_country\": \"\",\r\n        \"arabic_po_box\": \"\",\r\n        \"arabic_postal_code\": \"\",\r\n        \"creation_date\": \"10/23/2022\",\r\n        \"created_by\": \"\",\r\n        \"last_update_date\": \"10/23/2022\",\r\n        \"last_updated_by\": \"\",\r\n        \"customer_type\": \"Individual\",\r\n        \"owner_pct\": \"100\",\r\n        \"primary_owner\": \"Y\"\r\n    },\r\n    \"Reservation\": {\r\n        \"Oracle_Reservation_Number\": \"\",\r\n        \"registration_id\": \"64\",\r\n        \"org_id\": \"928\",\r\n        \"version_no\": \"1\",\r\n        \"registration_date\": \"10/23/2022\",\r\n        \"status\": \"3\",\r\n        \"broker_id\": \"5176\",\r\n        \"payment_plan_id\": \"\",\r\n        \"sale_type\": \"\",\r\n        \"payment_mode\": \"\",\r\n        \"billing_owner\": \"\",\r\n        \"token_deposit_amount\": \"\",\r\n        \"down_payment_amount\": \"583457\",\r\n        \"payment_type_id\": \"1\",\r\n        \"total_unit_price\": \"583457\",\r\n        \"discount_pct\": \"\",\r\n        \"discount\": \"\",\r\n        \"net_price\": \"583457\",\r\n        \"gross_unit_price\": \"583457\",\r\n        \"property_id\": \"24\",\r\n        \"office_section_id\": \"4702\",\r\n        \"saleable_area_sqft\": \"\",\r\n        \"unit_rate_sqft\": \"\",\r\n        \"saleable_area_sqm\": \"222.1\",\r\n        \"unit_rate_sqm\": \"583457\",\r\n        \"bank_account_type_code\": \"\",\r\n        \"bank_name\": \"\",\r\n        \"bank_account_iban\": \"\",\r\n        \"bank_account\": \"\",\r\n        \"promotion_id\": \"\",\r\n        \"promotion_offer_dtls\": \"\",\r\n        \"comments\": \"\",\r\n        \"creation_date\": \"10/23/2022\",\r\n        \"created_by\": \"\",\r\n        \"last_update_date\": \"10/23/2022\",\r\n        \"last_updated_by\": \"\",\r\n        \"VAT_RETT_Amount\": \"583457\",\r\n        \"salesrep_id\": \"ARK001776\",//PC\r\n        \"salesrep_manager_id\": \"\", //Sales Manager\r\n        \"salesrep_director_id\": \"\", //Director\r\n        \"release_id\": \"20980\",\r\n        \"building_land_id\": \"19312\",\r\n        \"floor_parcel_id\": \"19353\",\r\n        \"confirm_flag\": \"\",\r\n        \"payment_method\": \"\",\r\n        \"charge_type\": \"\",\r\n        \"receipt_number\": \"64\",\r\n        \"cheque_date\": \"\",\r\n        \"currency_code\": \"\",\r\n        \"exchange_rate\": \"\",\r\n        \"exchange_rate_type\": \"\",\r\n        \"exchange_rate_date\": \"\",\r\n        \"receipt_amount\": \"208\",\r\n        \"location_id\": null,\r\n        \"sale_admin_id\":\"ARK001222\",\r\n        \"payment_term\":\"C\",\r\n        \"Mortgage_Employee_name\":\"ABC\",\r\n        \"Mortgage_Employee_contact\":\"05984984\",\r\n        \"DAAR_English_Lender_Name\":\"AD\",\r\n        \"DAAAR_Arabic_Lender\":\"\",\r\n        \"RETT_VAT_Exemption\":\"Y\",\r\n        \"RETT_VAT_Reimbursement_Certificate_Number\":\"213456\"\r\n\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://daarconn-dev.alarkan.com/oracle/createcustomerreservation",
+							"protocol": "https",
+							"host": [
+								"daarconn-dev",
+								"alarkan",
+								"com"
+							],
+							"path": [
+								"oracle",
+								"createcustomerreservation"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\r\n    \"message\": null,\r\n    \"successStatus\": true,\r\n    \"statusCode\": \"1\",\r\n    \"response\": {\r\n        \"isPropertyAvailable\": false,\r\n        \"documentGeneration_ReturnStatus\":\"S\", //F\r\n        \"customerResponse\": {\r\n            \"customer_Number\": \"129571                                \",\r\n            \"customer_ID\": \"84986\",\r\n            \"customer_ReturnStatus\": \"S\",\r\n            \"customer_ReturnMessage\": \"Customer is successfuly created\"\r\n        },\r\n        \"reservationResponse\": {\r\n            \"reservation_No\": \"7382                                  \",\r\n            \"reservation_ID\": \"11737\",\r\n            \"reservation_ReturnStatus\": \"S\",\r\n            \"reservation_ReturnMessage\": \"Reservation is successfuly created\"\r\n        },\r\n        \"linkResponse\": {\r\n            \"link_ReturnStatus\": \"S\",\r\n            \"link_ReturnMessage\": \"Linked Successfully\"\r\n        }\r\n    }\r\n}"
+				}
+			]
+		},
+		{
+			"name": "Validate User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "RGFhci05MUAxMjM0OlBhc3M3NkBAJiY=",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"UserName\":\"testUser\",\r\n \"Password\":\"TestUser@Macquires\"\r\n\r\n }\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://daarconn-dev.alarkan.com/Account/validatelogin",
+					"protocol": "https",
+					"host": [
+						"daarconn-dev",
+						"alarkan",
+						"com"
+					],
+					"path": [
+						"Account",
+						"validatelogin"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
